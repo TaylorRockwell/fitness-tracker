@@ -18,7 +18,7 @@ app.use(express.static("public"));
 app.use(apiRoutes)
 
 // connect to mongodb database
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker-db",
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessTrackerDb",
   {
     useNewUrlParser: true,
     useFindAndModify: false
